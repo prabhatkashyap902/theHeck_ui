@@ -6,7 +6,7 @@ import img from '../assets/images/theheck_project2_img.svg'
   
 const Card = ({ card }) => {
     return (
-    <div className={`flex justify-between  px-20 py-5 items-center h-[60vh] w-[100vh] bg-white text-white  mr-10 rounded-2xl ${card.bgColor}`}>
+    <div className={`flex justify-between  px-20 py-5 items-center h-[70vh] w-[100vh] text-white  mr-10 rounded-2xl ${card.bgColor}`}>
         <div className='relative w-[40%] flex flex-col'>
             <span className='absolute -mt-[25%] -ml-[10%] text-7xl'>{card.id}</span>
             <span >{card.description}</span>
