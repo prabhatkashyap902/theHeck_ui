@@ -146,7 +146,7 @@ const HeroComponent = () => {
                 direction="left"
                 
             >
-                Graphic Design  |  Branding |  Marketing animation  |  Landing Page  |  Website Design  |  Concept Developement  |  Illustrations  |  Graphic Design  |  Branding |  Marketing animation  |  Landing Page  |  Website Design  |  Concept Developement  |  Illustrations  |  
+                &nbsp;Graphic Design  |  Branding |  Marketing animation  |  Landing Page  |  Website Design  |  Concept Developement  |  Illustrations  |  Graphic Design  |  Branding |  Marketing animation  |  Landing Page  |  Website Design  |  Concept Developement  |  Illustrations  |  
 
             </Marquee>
         </div>
