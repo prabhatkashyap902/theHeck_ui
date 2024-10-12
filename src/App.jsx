@@ -1,66 +1,36 @@
-import './App.css'
-import { Canvas } from '@react-three/fiber';
-import { EffectComposer } from '@react-three/postprocessing';
-import { Html } from '@react-three/drei'; // Import Html from drei
-import { Fluid } from '@whatisjery/react-fluid-distortion';
-import { Text as DreiText } from '@react-three/drei';
+import './App.css';
+import Header from './components/header';
+import HeroComponent from './components/HeroComponent';
 
 
+
+// function ScrollableContent() {
+//   return (
+//     <div className="scroll-container">
+//       <h2 className="text-4xl text-white font-bold mb-8">Our Work</h2>
+//       <p className="text-gray-400 mb-4">
+//         We offer top-notch services in branding, marketing animations, website design, and graphic design.
+//       </p>
+//       <div className="image-gallery mb-8">
+//         {/* Add images or content */}
+//       </div>
+//       <h2 className="text-4xl text-white font-bold mb-8">Our Clients</h2>
+//       <p className="text-gray-400">
+//         Over the years, we've partnered with numerous reputable brands across different industries.
+//       </p>
+//     </div>
+//   );
+// }
+
+// Main App Component
 function App() {
-
   return (
-    <>
-    <div className="text-9xl flex justify-center items-center h-[100vh] bg-white">
-      <Canvas
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          height: '100vh',
-          width: '100vw',
-          backgroundColor:'black'
-        }}
-      >
-        
-        <EffectComposer>
-          <Fluid 
-          
-            radius={0.5}
-            curl={0}
-            swirl={0}
-            distortion={0.05}
-            force={2}
-            pressure={0.1}
-            densityDissipation={0.97}
-            velocityDissipation={0.5}
-            intensity={0.3}
-            rainbow={false}
-            blend={-5}
-            showBackground={false}
-            // backgroundColor='yellow'
-            fluidColor='red'
-          />
-          <DreiText
-          letterSpacing={-0.07}
-          fontSize={0.94}
-          position-y={0.8}
-          color='white'
-        >
-          REACT POST
-        </DreiText>
-          
-          {/* <Html>
-              <span>Hello</span>
-          </Html> */}
-          
-        </EffectComposer>
-        
-        
-      </Canvas>
+    <div className="h-screen bg-black ">
+      <Header/>
+      <HeroComponent/>
+      
     </div>
-
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
