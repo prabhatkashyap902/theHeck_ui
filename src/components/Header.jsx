@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import theHeckLimited from '../assets/images/theheck_Limited_mark.svg'
 
 const Header = () => {
+
   return (
     <motion.div
-        className="absolute top-0 left-0 w-full text-white z-20 p-8 flex justify-between items-center "
+        className={`absolute top-0 left-0 w-full text-white z-20 p-8 flex justify-between items-center transition-transform duration-300 `}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
