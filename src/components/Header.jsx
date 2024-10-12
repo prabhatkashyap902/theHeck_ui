@@ -14,11 +14,12 @@ const Header = () => {
         <div ><span className='text-xl'>the</span><span className='italic underline text-2xl'>heck</span></div>
         <div className='absolute left-0 right-0 flex justify-center '><img src={theHeckLimited}/></div>
         <div className="buttons flex space-x-4">
-          <motion.button className="relative z-10 border border-white px-8 py-2 cursor-pointer rounded-full text-white transition duration-300"
-          whileHover={{ color: 'white' }}>
+          <motion.button className="relative z-10 border border-white px-8 py-2 cursor-pointer rounded-full text-white transition duration-200"
+            whileHover={{ color: 'white', backgroundColor: '#FF0303' }}>
             work
           </motion.button>
-          <motion.button className="border border-white px-8 py-2 cursor-pointer rounded-full ">
+          <motion.button className="relative z-10 border border-white px-8 py-2 cursor-pointer rounded-full text-white transition duration-200"
+            whileHover={{ color: 'white', backgroundColor: '#FF0303' }}>
             Contact us
           </motion.button>
         </div>
