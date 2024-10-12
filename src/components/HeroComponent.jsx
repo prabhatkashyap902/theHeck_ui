@@ -20,18 +20,7 @@ function ImagePlane({ image, position }) {
 const HeroComponent = () => {
   return (
     <div>
-        {/* Main Heading */}
-      <motion.div
-        className="absolute top-1/3 w-full text-center z-20"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}
-      >
-        {/* <h1 className="text-9xl text-white font-bold">theheck</h1>
-        <p className="text-xl text-gray-400">FOR ANYTHING DESIGN</p> */}
-      </motion.div>
-
-      {/* Three.js Canvas */}
+        
       <Canvas style={{
           position: 'fixed',
           top: 0,
@@ -60,10 +49,10 @@ const HeroComponent = () => {
         </EffectComposer>
 
         {/* 3D Image Plane */}
-        <ImagePlane image={parallaxImage} position={[0, 0.5, 0.1]} /> {/* Move back by setting z=-1 */}
+        <ImagePlane image={parallaxImage} position={[-0.2, -0.2, 0.1]} /> {/* Move back by setting z=-1 */}
 
         <DreiText
-            position={[0, 3, 0]}
+            position={[0, 2.8, 0]}
             letterSpacing={-0.07}
             fontSize={0.15} // Smaller font size
             fontStyle="normal"
@@ -75,17 +64,16 @@ const HeroComponent = () => {
         
         {/* "the" text part */}
         <DreiText
-            position={[0, 0, 0]}
+            position={[0, -0.2, 0]}
             letterSpacing={-0.07}
-            fontSize={1.5} // Smaller font size
-            position-y={0.8}
+            fontSize={'1.5'} // Smaller font size
             fontStyle="normal"
             font='/fonts/Franie-Regular.ttf'
         >
             theheck
         </DreiText>
         
-        <DreiText position={[3.3, -0.2, 0]} letterSpacing={-0.07} fontSize={0.3} color={'gray'} fontWeight='bold' textAlign='right' anchorX="right" font='/fonts/Franie-Regular.ttf'>
+        <DreiText position={[3.3, -1.2, 0]} letterSpacing={-0.07} fontSize={0.3} color={'gray'} fontWeight='bold' textAlign='right' anchorX="right" font='/fonts/Franie-Regular.ttf'>
             FOR ANYTHING{'\n'} DESIGN
         </DreiText>
         {/* Scrollable Content */}
