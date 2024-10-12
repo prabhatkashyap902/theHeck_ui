@@ -9,7 +9,7 @@ const Card = ({ card }) => {
     <div className={`flex justify-between  px-20 py-5 items-center h-[70vh] w-[100vh] text-white  mr-10 rounded-2xl ${card.bgColor}`}>
         <div className='relative w-[40%] flex flex-col'>
             <span className='absolute -mt-[25%] -ml-[10%] text-7xl'>{card.id}</span>
-            <span >{card.description}</span>
+            <span className='text-sm'>{card.description}</span>
             <div className='mt-10'>
                 <button className={`border border-white px-8 py-3 cursor-pointer rounded-full text-white transition duration-200 hover:bg-`} onClick={() => window.open(card.link)}>Click to view</button>
             </div>
